@@ -44,7 +44,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/localcart"
+    "url": "https://github.com/builders-arena/localcart"
   },
   "keywords": ["ai", "shopping", "local-first", "browser-automation", "llm", "agent"]
 }

@@ -17,11 +17,8 @@ function Nav() {
           <Link href="/docs" className="hidden hover:text-white transition-colors sm:block">
             Docs
           </Link>
-          <Link href="/demo" className="hidden hover:text-white transition-colors sm:block">
-            Demo
-          </Link>
           <a
-            href="https://github.com/yourusername/localcart"
+            href="https://github.com/builders-arena/localcart"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
@@ -29,10 +26,13 @@ function Nav() {
             GitHub
           </a>
           <a
-            href="https://github.com/yourusername/localcart/releases/latest"
-            className="rounded-lg bg-brand-600 px-4 py-1.5 text-sm font-medium text-white hover:bg-brand-500 transition-colors"
+            href="https://github.com/builders-arena/localcart"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg bg-brand-600 px-4 py-1.5 text-sm font-medium text-white hover:bg-brand-500 transition-colors"
           >
-            Download
+            <GitHubIcon />
+            Star on GitHub
           </a>
         </div>
       </div>
@@ -75,11 +75,13 @@ function Hero() {
           </div>
           <span className="text-xs text-gray-500">or</span>
           <a
-            href="https://github.com/yourusername/localcart/releases/latest"
+            href="https://github.com/builders-arena/localcart"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white hover:bg-white/10 transition-colors"
           >
-            <DownloadIcon />
-            Download for your OS
+            <GitHubIcon />
+            View on GitHub
           </a>
         </div>
       </div>
@@ -231,7 +233,7 @@ function Security() {
 // ─── Quick Start ─────────────────────────────────────────────────────
 
 function QuickStart() {
-  const cloneCommands = `git clone https://github.com/yourusername/localcart
+  const cloneCommands = `git clone https://github.com/builders-arena/localcart
 cd localcart
 npm install
 npm run bridge`;
@@ -317,10 +319,7 @@ function ArchitecturePreview() {
             See what the bot sees
           </h2>
           <p className="mt-4 text-gray-400">
-            The control panel shows the LLM&apos;s sanitized view in real time.{' '}
-            <Link href="/demo" className="text-brand-400 hover:text-brand-300 underline">
-              Try the live demo
-            </Link>
+            The control panel shows the LLM&apos;s sanitized view in real time.
           </p>
         </div>
 
@@ -380,14 +379,11 @@ function Footer() {
           .
         </div>
         <div className="flex gap-6">
-          <a href="https://github.com/yourusername/localcart" className="hover:text-white">
+          <a href="https://github.com/builders-arena/localcart" className="hover:text-white">
             GitHub
           </a>
           <Link href="/docs" className="hover:text-white">
             Docs
-          </Link>
-          <Link href="/demo" className="hover:text-white">
-            Demo
           </Link>
         </div>
       </div>
@@ -397,10 +393,10 @@ function Footer() {
 
 // ─── Icons (inline SVG, no dependency) ───────────────────────────────
 
-function DownloadIcon() {
+function GitHubIcon() {
   return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M8 2v8m0 0L5 7m3 3 3-3M3 12h10" />
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
     </svg>
   );
 }

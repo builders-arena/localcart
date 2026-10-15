@@ -4,8 +4,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/yourusername/localcart/actions"><img src="https://img.shields.io/github/actions/workflow/status/yourusername/localcart/ci.yml?branch=main&style=flat-square" alt="Build Status"></a>
-  <a href="https://github.com/yourusername/localcart/releases/latest"><img src="https://img.shields.io/github/v/release/yourusername/localcart?style=flat-square" alt="Latest Release"></a>
+  <a href="https://github.com/builders-arena/localcart/actions"><img src="https://img.shields.io/github/actions/workflow/status/builders-arena/localcart/ci.yml?branch=main&style=flat-square" alt="Build Status"></a>
+  <a href="https://github.com/builders-arena/localcart/releases/latest"><img src="https://img.shields.io/github/v/release/builders-arena/localcart?style=flat-square" alt="Latest Release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT License"></a>
 </p>
 
@@ -29,7 +29,7 @@ Most AI shopping tools send your browsing data, purchase history, and payment in
 npx create-localcart@latest
 
 # Option B: from source
-git clone https://github.com/yourusername/localcart
+git clone https://github.com/builders-arena/localcart
 cd localcart
 npm install
 npm run bridge

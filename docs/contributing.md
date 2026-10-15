@@ -5,7 +5,7 @@ LocalCart is MIT-licensed and welcomes contributions.
 ## Development Setup
 
 ```bash
-git clone https://github.com/yourusername/localcart
+git clone https://github.com/builders-arena/localcart
 cd localcart
 npm install
 ```

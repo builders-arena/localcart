@@ -17,7 +17,7 @@ npx create-localcart@latest
 ### Option B: Clone from source
 
 ```bash
-git clone https://github.com/yourusername/localcart
+git clone https://github.com/builders-arena/localcart
 cd localcart
 npm install
 ```
