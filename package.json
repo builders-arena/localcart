@@ -1,0 +1,50 @@
+{
+  "name": "localcart",
+  "version": "0.2.0",
+  "description": "Local-first AI shopping agent — your data never leaves your machine",
+  "type": "module",
+  "bin": {
+    "localcart": "./dist/bridge/cli.js"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "bridge": "tsx bridge/cli.ts",
+    "bridge:build": "esbuild bridge/cli.ts --bundle --platform=node --target=node20 --outfile=dist/bridge/cli.js --format=esm --external:playwright --external:fsevents --banner:js=\"import{createRequire}from'module';const require=createRequire(import.meta.url);\"",
+    "bridge:pkg": "node scripts/package.js",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0",
+    "fastify": "^5.1.0",
+    "ws": "^8.18.0",
+    "zod": "^3.23.0",
+    "pino": "^9.5.0",
+    "pino-pretty": "^13.0.0",
+    "next": "^14.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "tsx": "^4.19.0",
+    "esbuild": "^0.24.0",
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.5.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "archiver": "^7.0.0",
+    "@tailwindcss/typography": "^0.5.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/localcart"
+  },
+  "keywords": ["ai", "shopping", "local-first", "browser-automation", "llm", "agent"]
+}
